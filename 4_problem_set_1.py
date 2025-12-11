@@ -27,6 +27,23 @@ print("The sum of numbers from 1 to", n, "is: ", sum)
 
 # *(Example: factorial of 5 is 120)
 
+for i in range(10):
+    print(i)
+
+def factorial(n):
+    factorial = 1
+    for i in range(n):
+        factorial*=i+1
+    
+    return factorial
+print(factorial(5))
+
+# n0 = int(input("Type in a number: "))
+# factorial = 1
+# for num in range(1, n0 + 1):
+#     factorial*=num
+
+# 5! = 5 x 4 x 3 x 2 x 1 = 120
 
 # ### **Problem 4: Count Vowels**
 
@@ -37,7 +54,17 @@ print("The sum of numbers from 1 to", n, "is: ", sum)
 
 # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
 
-
+n = int(input("Type in a number: "))
+print("Even numbers from 2 to", n, ":")
+for number in range(2, n + 1 , 2):
+    print(number)
+# if number is even, print it
+list_even_numbers = list(range(1, 45))
+for number in list_even_numbers:
+    if number % 2 == 0:
+        print("Even number", number)
+    else:
+        print("Odd number, skipping", number)
 
 # ### **Problem 6: Reverse a String**
 
