@@ -98,7 +98,24 @@ print(reversed_name[::-1]) # alternative method using slicing
 
 # Ask the user for a number **n**, then print the first **n numbers** of the Fibonacci sequence.
 
+# recursion means a function calls itself
+# an example of recursion is the Fibonacci sequence
+def car_price(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return car_price(n-1) + car_price(n-2)
+print(car_price(6)) # output is 8
 
+
+def fibonacci(n):
+    if n in [1,2]:
+        return 1
+    return fibonacci(n-1)+fibonacci(n-2)
+for i in range(1,10):
+    print(fibonacci(i))
 
 # ### **Problem 10: Pattern Printing**
 
