@@ -70,7 +70,15 @@ for number in list_even_numbers:
 
 # Ask the user for a string, then print the string **backwards**.
 
-
+name = input("Enter a string: ")
+reversed_name = ""
+for char in name:
+    # we are looping through each character in the string
+    # and adding it to the front of reversed_name
+    reversed_name = char + reversed_name 
+    # prepend each character to reversed_name
+print("Reversed string:", reversed_name)
+print(reversed_name[::-1]) # alternative method using slicing
 
 # ### **Problem 7: Multiplication Table**
 
